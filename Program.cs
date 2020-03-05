@@ -16,10 +16,10 @@ namespace QuizTimeStudio
         //have a list of questions and answers for each
         private static List<Dictionary<string, string>> QuizTime = new List<Dictionary<string, string>>();
         
-        static 
-        static void AskQuestion(List<Dictionary<string, string>>)
+         
+        static void AskQuestion(List<Dictionary<string, string>> quizQuestions)
         {
-            foreach (Dictionary<string, string> quiz in QuizTime)
+            foreach (Dictionary<string, string> quiz in quizQuestions)
             {
                 foreach (KeyValuePair<string, string> line in quiz)
                 {
